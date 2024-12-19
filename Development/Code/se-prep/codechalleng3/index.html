@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flatdango</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #movie-details {
+      text-align: center; /* Center the content in the section */
+    }
+
+    #poster {
+      width: 200px; /* Set the desired width */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 8px; /* Optional: Add rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Flatdango Movie Theater</h1>
+  </header>
+
+  <main>
+    <section id="movie-details">
+      <img id="poster" src="" alt="Movie Poster">
+      <h2 id="title">Movie Title</h2>
+      <p><strong>Runtime:</strong> <span id="runtime">0</span> mins</p>
+      <p><strong>Showtime:</strong> <span id="showtime">00:00</span></p>
+      <p><strong>Available Tickets:</strong> <span id="available-tickets">0</span></p>
+      <button id="buy-ticket">Buy Ticket</button>
+    </section>
+
+    <aside>
+      <h3>Now Showing</h3>
+      <ul id="films">
+        <li class="placeholder">Loading movies...</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Flatiron Movie Theater</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
